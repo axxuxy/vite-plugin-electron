@@ -18,7 +18,7 @@ export default defineConfig({
       entryFileNames(info) {
         return relative(resolve(__dirname, "src"), info.facadeModuleId).replace(
           /ts$/,
-          "js"
+          "mjs"
         );
       },
     },
