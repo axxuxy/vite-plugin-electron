@@ -8,7 +8,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const output = resolve(__dirname, "dist");
 
 export default defineConfig({
-  input: resolve(__dirname, "src/index.ts"),
+  input: [
+    resolve(__dirname, "src/index.ts"),
+    resolve(__dirname, "src/main_electron/build.ts"),
+  ],
   external: ["vite", "electron", "tslib"],
   output: [
     {
