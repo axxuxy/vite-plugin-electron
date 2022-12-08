@@ -1,3 +1,4 @@
 node_modules
 dist
 pnpm-lock.yaml
+src/main_electron/build.json

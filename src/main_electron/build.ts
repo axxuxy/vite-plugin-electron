@@ -1,5 +1,6 @@
+import { existsSync, readFileSync } from "fs";
 import { builtinModules } from "module";
-
+import { resolve } from "path";
 import { build as _build, type UserConfig } from "vite";
 import { passViteResolvePlugin } from "../pass_vite_resolve";
 import watchBuild from "./build_watch";
@@ -57,4 +58,8 @@ export function build(
 }
 
 // export default buildConfig;
-export default {};
+export default () => {
+  const filePath = resolve(__dirname, "build.json");
+  if (!existsSync(filePath)) return {};
+  return buildConfig(JSON.parse(readFileSync(filePath, "utf-8")));
+};
