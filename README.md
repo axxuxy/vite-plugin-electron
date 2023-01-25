@@ -2,11 +2,11 @@
 
 install cmd:
 ```
-npm install git+https://axxuxy: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@github.com/axxuxy/vite-plugin-electron.git -D
+npm install git+https://axxuxy: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@github.com/axxuxy/vite-plugin-electron.git -D
 ```
 ```
-pnpm install git+https://axxuxy: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@github.com/axxuxy/vite-plugin-electron.git -D
+pnpm install git+https://axxuxy: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@github.com/axxuxy/vite-plugin-electron.git -D
 ```
 ```
-yarn add git+https://axxuxy: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@github.com/axxuxy/vite-plugin-electron.git -D
+yarn add git+https://axxuxy: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@github.com/axxuxy/vite-plugin-electron.git -D
 ```
