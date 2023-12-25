@@ -2,11 +2,11 @@
 
 install cmd:
 ```
-npm install git+https://github.com/axxuxy/vite-plugin-electron.git -D
+npm install https://github.com/axxuxy/vite-plugin-electron.git -D
 ```
 ```
-pnpm install git+https://github.com/axxuxy/vite-plugin-electron.git -D
+pnpm install https://github.com/axxuxy/vite-plugin-electron.git -D
 ```
 ```
-yarn add git+https://github.com/axxuxy/vite-plugin-electron.git -D
+yarn add https://github.com/axxuxy/vite-plugin-electron.git -D
 ```
