@@ -24,7 +24,7 @@ export default (option: MainElectronPluginOption): PluginOption[] => {
       apply: "serve",
       configureServer(serve) {
         /// On serve started,start build and watch electron code.
-        serve.httpServer!.once("listening", () => {
+        serve.httpServer?.once("listening", () => {
           if (!process.env.VITEST) {
             const watch = build();
             watch.once("exit", (code) => {
